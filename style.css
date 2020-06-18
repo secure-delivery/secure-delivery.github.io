@@ -4917,11 +4917,20 @@ body.device-touch.device-xs .portfolio-notitle .portfolio-overlay { display: non
 .entry-title h2 a:hover { color: #1ABC9C; }
 
 .entry-meta {
-	margin: 10px -10px -15px 0;
-	list-style: none;
+
 }
 
 .single-post .entry-meta { margin-bottom: 20px; }
+
+.entry-meta ul {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 10px -10px -15px 0;
+	list-style: none;
+}
 
 .entry-meta li {
 	float: left;
@@ -4929,8 +4938,6 @@ body.device-touch.device-xs .portfolio-notitle .portfolio-overlay { display: non
 	line-height: 14px;
 	margin: 0 10px 15px 0;
 	color: #999;
-	font-family: 'Crete Round', serif;
-	font-style: italic;
 }
 
 .entry-meta li:before {
@@ -4967,7 +4974,11 @@ body.device-touch.device-xs .portfolio-notitle .portfolio-overlay { display: non
 
 .single-post .entry-content .entry-image { max-width: 350px; }
 
-.entry-content { position: relative; }
+.entry-content { font-size: 1rem; position: relative; }
+
+.entry-content ul { margin-left: 0; padding-left: 40px; }
+
+.entry-content ol { margin-left: 0; padding-left: 40px; }
 
 .entry-link {
 	display: block;
@@ -4999,7 +5010,6 @@ body:not(.device-touch) .entry-link {
 .entry-link span {
 	display: block;
 	margin-top: 5px;
-	font-family: 'Crete Round', serif;
 	font-style: italic;
 	font-weight: normal;
 	text-transform: none;
@@ -5012,7 +5022,7 @@ body:not(.device-touch) .entry-link {
 
 .entry blockquote p {
 	font-weight: 400;
-	font-family: 'Crete Round', serif;
+	font-family: 'PT Serif', serif;
 	font-style: italic;
 }
 
@@ -5353,7 +5363,6 @@ body:not(.device-touch) .entry-link {
 	display: inline-block;
 	border-bottom: 1px solid #1ABC9C;
 	padding: 0 2px;
-	font-family: 'Crete Round', serif;
 	font-style: italic;
 }
 
@@ -9864,7 +9873,7 @@ body:not(.device-touch) .clients-grid li a {
 	display: block;
 	color: #1ABC9C;
 	font-weight: 400;
-	font-family: 'Crete Round', serif;
+
 	font-style: italic;
 	font-size: 15px;
 	margin-top: 5px;
@@ -10394,7 +10403,7 @@ blockquote p { margin-bottom: 15px; }
 blockquote {
 	padding: 10px 20px;
 	margin: 0 0 20px;
-	font-size: 17px;
+	font-size: 1.125rem;
 	border-left: 5px solid #EEE;
 }
 
@@ -13933,5 +13942,3 @@ body:not(.no-transition) #wrapper,
 	-webkit-text-stroke: 0px !important;
 	text-shadow: none !important;
 }
-
-
