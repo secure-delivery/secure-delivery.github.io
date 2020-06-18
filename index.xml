@@ -1,13 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Secure Delivery</title><link>https://securedelivery.io/</link><description>Recent content on Secure Delivery</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 18 Jun 2020 11:30:08 +0100</lastBuildDate><atom:link href="https://securedelivery.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Number of Data Breaches is not a Good Security Metric</title><link>https://securedelivery.io/articles/number-of-data-breaches-is-not-a-good-security-metric/</link><pubDate>Thu, 18 Jun 2020 11:30:08 +0100</pubDate><guid>https://securedelivery.io/articles/number-of-data-breaches-is-not-a-good-security-metric/</guid><description>Ok, of course it&amp;rsquo;s not. Does this feel familiar though?
-Budget gets allocated to cybersecurity
-Cybersecurity activities happen
-Everyone is reasonably happy, except the application delivery teams having cybersecurity activities done to them
-Terrible news - a data breach!
-Panic
-Budget gets substantially increased for cybersecurity
-Substantially more cybersecurity activities happen
-Everyone is reasonably happy, except the application delivery teams having substantially more cybersecurity activities done to them
-Terrible news - a data breach!</description></item><item><title/><link>https://securedelivery.io/articles/breaches-draft/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://securedelivery.io/articles/breaches-draft/</guid><description>Number of Data Breaches is not a Good Security Metric Ok, of course it&amp;rsquo;s not. Does this feel familiar though?
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Secure Delivery</title><link>https://securedelivery.io/</link><description>Recent content on Secure Delivery</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://securedelivery.io/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://securedelivery.io/articles/breaches/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://securedelivery.io/articles/breaches/</guid><description>Number of Data Breaches is not a Good Security Metric Ok, of course it&amp;rsquo;s not. Does this feel familiar though?
 Budget gets allocated to cybersecurity
 Cybersecurity activities happen
 Everyone is reasonably happy, except the application delivery teams having cybersecurity activities done to them
