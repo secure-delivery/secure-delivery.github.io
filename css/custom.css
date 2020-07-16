@@ -16,3 +16,7 @@
 }
 .content-wrap { padding-bottom: 0; }
 .t300 { font-weight: 300!important;  }
+
+.entry-content li {
+	margin-left: 3em;
+}
