@@ -1,0 +1,5 @@
+Contact: security@securedelivery.io
+Encryption: https://pgp.key-server.io/0xC9868AF75F4197BE
+Preferred-Languages: en,nl,fr,de
+Canonical: https://securedelivery.io/.well-known/security.txt
+
