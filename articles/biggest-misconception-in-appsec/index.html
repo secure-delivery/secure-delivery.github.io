@@ -1,6 +1,5 @@
 <!doctype html><html dir=ltr lang=en-gb><html dir=ltr lang=en-us>
 <head>
-<meta name=generator content="Hugo 0.88.1">
 <meta charset=utf-8>
 <link rel="shortcut icon" href=https://securedelivery.io/favicon.ico>
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,700|Open+Sans:300,400,600,700,800,900&display=swap" rel=stylesheet type=text/css>
@@ -54,247 +53,113 @@
 </div>
 <div class=header-wrap-clone></div>
 </header>
-<section id=slider class="slider-element slider-parallax swiper_wrapper min-vh-60 min-vh-md-100 include-header" data-loop=true>
-<div class=slider-inner>
-<div class="swiper-container swiper-parent">
-<div class=swiper-wrapper>
-<div class="swiper-slide dark">
-<div class=container>
-<div class="slider-caption slider-caption-center">
+<section id=content>
+<div class="content-wrap pt-0 bg-light">
+<div class="container clearfix">
+<div class="entry-image align-full mb-0">
+<img src=/images/dolphins.png alt="Blog Single" class=align-wide-full>
+<div class="p-4 bg-white position-relative shadow-sm rounded text-center align-wide-lg" style=transform:translateY(-30%)>
+<div class="entry-title pt-3">
+<h2>The Biggest Misconception in Application Security</h2>
+</div>
+<div class="entry-meta mb-0 pb-3">
+<ul class="justify-content-center m-0">
+<li><i class=icon-calendar3></i> July 1, 2020</li>
+<li><a href=#><i class=icon-user></i> Toby Irvine</a></li>
+<li><i class=icon-folder-open></i> Security, Delivery</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="single-post mw-sm mx-auto">
+<div class="entry clearfix">
+<div class=clear></div>
+<div class=entry-content>
+<p>I&rsquo;ve touched on this in <a href=https://www.linkedin.com/pulse/number-data-breaches-good-security-metric-toby-irvine/>previous</a> <a href=https://www.linkedin.com/pulse/building-culture-quality-toby-irvine/>articles</a>, but it&rsquo;s worth dedicating a little time to this misconception as it&rsquo;s at the root of so many of the problems that organisations have with security and delivery. A common way to think about maintaining security while delivering software systems at pace is this.</p>
+<p><img src=/images/wrong-thinking.png alt="Secure Delivery Misconception"></p>
+<p>Where rapid delivery of changes into production is one end of a scale, being secure is at the other end and, as an organisation, you pick where along the scale you&rsquo;re comfortable according to your risk appetite. This makes intuitive sense - if your mental model of software delivery is like driving a car and you&rsquo;re taking more risks with your foot down, going faster. The problem with this mental model is <strong>it&rsquo;s completely wrong</strong>.</p>
+<p><img src=/images/wrong-thinking-no.png alt="Secure Delivery Misconception"></p>
+<p>Building software is one of the most complex human endeavours. It&rsquo;s not possible to deliver applications at pace unless the software is of high quality. The slowest release cadence projects I&rsquo;ve ever worked with have all been the lowest quality, worst designs and codebases and I&rsquo;m sure you have the same experience. These low quality systems simply <em>can&rsquo;t</em> be changed quickly. They will functionally fall apart if you try and everyone is, quite correctly, far too scared to try. Every change leads to unpredictable failures in an overly-complex system with:</p>
+<ul>
+<li>A <a href=https://en.wikipedia.org/wiki/Big_ball_of_mud>ball of mud</a> architecture</li>
+<li>Incomprehensible code</li>
+<li><a href=https://wiki.c2.com/?GlobalVariablesAreBad>Global variables</a> and state</li>
+<li>Poor <a href=https://www.investopedia.com/terms/f/functional-decomposition.asp>functional decomposition</a></li>
+<li>Specialist teams of developers, testers, architects and operations all handing off changes to each other with ill-defined responsibilities</li>
+</ul>
+<p>You simply can&rsquo;t deliver at pace unless you&rsquo;re paying attention to the non-functionals. Performant, interoperable, reliable, usable, maintainable and secure systems can be changed with confidence. They have:</p>
+<ul>
+<li>A decoupled design that allows for simpler subsystems or components of the system to be changed independently</li>
+<li>Code that is clear, understandable and functionally decomposed well</li>
+<li>Comprehensive instrumentation giving visibility into the running system in test and production so that any aberrant behaviours are immediately seen</li>
+<li>Delivery teams that are cross-functional with continuous responsibility for all aspects of the system so that quality, <em>all</em> quality, <em>including</em> security, can be assured continuously without slowdowns</li>
+</ul>
+<h4 id=delivering-slowly-isnt-more-secure-its-_fearful_-and-if-youre-afraid-of-changing-a-system-then-the-system-is-_not_-secure>Delivering slowly isn&rsquo;t more secure, it&rsquo;s <em>fearful</em>, and if you&rsquo;re afraid of changing a system then the system is <em>not</em> secure</h4>
+<p>If this misconception is how your organisation is thinking about security then what it&rsquo;s really saying is:</p>
+<ul>
+<li>We can&rsquo;t assure security of daily releases</li>
+<li>A ticket raised for a security assessment won&rsquo;t even get assigned to a security tester in that time</li>
+<li>Our security operations team would be swamped by daily changes going into production from all the development teams in our organisation</li>
+<li>We don&rsquo;t have confidence that our development teams have the skills needed to deliver at pace</li>
+</ul>
+<p>And these are all valid, <em>fixable</em> problems. <em>Not</em> an absolute truth about software delivery pace being antagonistic to security. The first step is identifying the real problems, I&rsquo;ve listed some common ones here and I&rsquo;m sure you can think of more. The next step - fixing things.</p>
+<p>Let&rsquo;s switch out security for another non-functional requirement that&rsquo;s very important to your organisation: performance. From my experience working with everyone involved in software delivery it helps to avoid any ingrained ways of thinking. Can you deliver rapid changes to your software systems and maintain a high level of performance, or even <em>improve</em> performance in the process? Of course you can! If you wanted to ensure high performance while evolving your applications at pace you would:</p>
+<ul>
+<li>Think about the <strong>performance</strong> impact of any changes during planning and design</li>
+<li>Plan your overall system architecture with <strong>performance</strong> in mind</li>
+<li>Make sure everyone knows how to write <strong>performant</strong> code in the languages and frameworks you’re using</li>
+<li>Hire people with domain expertise in <strong>performance</strong> engineering to work with, train and coach teams</li>
+<li>Peer-review code changes for the inevitable human mistakes that could affect <strong>performance</strong></li>
+<li>Share known-<strong>performant</strong> code and internal libraries across teams</li>
+<li>Make <strong>performance</strong> a key consideration in the selection of any third-party libraries you depend on</li>
+<li>Make <strong>performance</strong> a key consideration in the selection of any third-party services you depend on</li>
+<li>Automatically test all changes for <strong>performance</strong> regressions on every commit so developers can catch and fix them early</li>
+<li>Prioritise <strong>performance</strong> fixes in your backlog / development cycles</li>
+<li>Inject comprehensive telemetry into your systems to monitor <strong>performance</strong> in production</li>
+<li>Investigate & fix <strong>performance</strong> incidents in production and widely publish findings across the organisation to improve learning</li>
+<li>Make maintaining high <strong>performance</strong> the responsibility of the teams delivering the applications</li>
+</ul>
+<p>Nothing controversial here - a sensible approach to meeting an important, non-functional engineering requirement. All of it equally applicable to security. Let&rsquo;s make the obvious substitution:</p>
+<ul>
+<li>Think about the <strong>security</strong> impact of any changes during planning and design</li>
+<li>Plan your overall system architecture with <strong>security</strong> in mind</li>
+<li>Make sure everyone knows how to write <strong>secure</strong> code in the languages and frameworks you’re using</li>
+<li>Hire people with domain expertise in <strong>security</strong> engineering to work with, train and coach teams</li>
+<li>Peer-review code changes for the inevitable human mistakes that could affect <strong>security</strong></li>
+<li>Share known-<strong>secure</strong> code and internal libraries across teams</li>
+<li>Make <strong>security</strong> a key consideration in the selection of any third-party libraries you depend on</li>
+<li>Make <strong>security</strong> a key consideration in the selection of any third-party services you depend on</li>
+<li>Automatically test all changes for <strong>security</strong> regressions on every commit so developers can catch and fix them early</li>
+<li>Prioritise <strong>security</strong> fixes in your backlog / development cycles</li>
+<li>Inject comprehensive telemetry into your systems to monitor <strong>security</strong> in production</li>
+<li>Investigate & fix <strong>security</strong> incidents in production and widely publish findings across the organisation to improve learning</li>
+<li>Make maintaining high <strong>security</strong> the responsibility of the teams delivering the applications</li>
+</ul>
+<p>If you&rsquo;re a delivery team, doing these things takes control of the security of your systems. If you&rsquo;re a security team, ensuring your organisation is doing these things scales your knowledge and expertise across the whole business. Nobody, <em>absolutely nobody</em>, has to slow down.</p>
+<div class=clear></div>
+<div class="si-share border-0 d-flex justify-content-between align-items-center">
+<span>Share this Post:</span>
 <div>
-<h2 class="font-primary nott">
-SECURE
-<span class=text-rotater data-separator=| data-typed=true data-speed=50 data-backdelay=3000 data-loop=true>
-<span class="t-rotate font-weight-bold font-primary nott">Leadership|Product|Design|Engineering|DELIVERY</span>
-</span>
-</h2>
-<p class="fw-light font-primary d-none d-sm-block">Best-in-class support to secure product development across your whole org.</p>
-<a href=#what-we-do data-scrollto=#what-we-do class="button button-rounded button-large nott ls0 font-primary">Find Out More</a>
+<a href=# class="social-icon si-borderless si-pinterest">
+<i class=icon-linkedin></i>
+<i class=icon-linkedin></i>
+</a>
+<a href=# class="social-icon si-borderless si-twitter">
+<i class=icon-twitter></i>
+<i class=icon-twitter></i>
+</a>
+<a href=# class="social-icon si-borderless si-email3">
+<i class=icon-email3></i>
+<i class=icon-email3></i>
+</a>
 </div>
 </div>
 </div>
-<div class=swiper-slide-bg style=background-image:url(/demos/business/images/slider/1.jpg)></div>
 </div>
 </div>
 </div>
-<a href=# data-scrollto=#content data-offset=0 class="dark one-page-arrow"><img class="infinite animated fadeInDown" src=/demos/business/images/mouse.svg alt=Image></a>
 </div>
 </section>
-<section id=content>
-<div class="content-wrap pb-0" style=z-index:1>
-<div class="container topmargin clearfix">
-<div class="heading-block center border-0" data-heading=W>
-<h3 id=what-we-do>What We Do</h3>
-</div>
-<div class="row clearfix">
-<div class="center col-lg-8 offset-lg-2 bottommargin">
-<h3 class="text-rotater font-secondary" data-separator=, data-rotate=fadeInRight data-speed=3500>
-We're the trusted partner in digital product security for organisations across many industries. We specialise in proven, scalable solutions to training, tooling and instilling the right ways of working to secure digital product development for global, regulated organisations.
-</h3>
-</div>
-</div>
-<div class="row justify-content-center gutter-50 col-mb-50">
-<div class=clear></div>
-<div class="clear my-3"></div>
-<div class="col-lg-3 col-sm-6">
-<div class="feature-box fbox-effect flex-column border p-4 rounded-3">
-<div class="fbox-icon mb-4">
-<a href=#><img src=images/icons/student.svg alt="Feature Icon" class="bg-transparent rounded-0"></a>
-</div>
-<div class=fbox-content>
-<h3>Practical Training</h3>
-<p>Hands-on training from the best practioners of product security in the world. The right knowledge to the right people.</p>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="feature-box fbox-effect flex-column border p-4 rounded-3">
-<div class="fbox-icon mb-4">
-<a href=#><img src=images/icons/social.svg alt="Feature Icon" class="bg-transparent rounded-0"></a>
-</div>
-<div class=fbox-content>
-<h3>Tailored Workshops</h3>
-<p>Establish the best approach for your organisation across people, process and technology with our expert-led workshops.</p>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="feature-box fbox-effect flex-column border p-4 rounded-3">
-<div class="fbox-icon mb-4">
-<a href=#><img src=images/icons/shield-security.svg alt="Feature Icon" class="bg-transparent rounded-0"></a>
-</div>
-<div class=fbox-content>
-<h3>Secure By Design</h3>
-<p>Introduce threat modelling for agile product development with our open, online platform to support remote teams.</p>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="feature-box fbox-effect flex-column border p-4 rounded-3">
-<div class="fbox-icon mb-4">
-<a href=#><img src=images/icons/rotate-right.svg alt="Feature Icon" class="bg-transparent rounded-0"></a>
-</div>
-<div class=fbox-content>
-<h3>Continuous Coaching</h3>
-<p>Support for your whole org as you integrate world-class security practices into your product development.</p>
-</div>
-</div>
-</div>
-<div class="clear my-3"></div>
-</div>
-</div>
-<div class="section bg-transparent clearfix">
-<div class="container clearfix">
-<div class="heading-block bottommargin-lg center border-0" data-heading=H>
-<h3 id=how-we-work class="nott ls0">How We Work</h3>
-</div>
-</div>
-<div id=oc-features class="owl-carousel owl-carousel-full image-carousel carousel-widget customjs">
-<div class=oc-item>
-<div class="row cleafix">
-<div class=col-xl-8>
-<img src=demos/business/images/carousel/1.jpg alt=Image>
-</div>
-<div class=col-xl-4 style="padding:20px 0 0 20px">
-<h3>Engineering teams.</h3>
-<p>We were founded on solid engineering principles and experience. Our practitioners have decades of experience in software engineering and speak credibly to teams across all industries.</p>
-<p>Security knowledge is not to be held by a select few. We work across all of your engineering teams to instil the knowledge and approaches necessary to secure engineering at global scale.</p>
-</div>
-</div>
-</div>
-<div class=oc-item>
-<div class="row cleafix">
-<div class=col-xl-8>
-<img src=demos/business/images/carousel/2.jpg alt=Image>
-</div>
-<div class=col-xl-4 style="padding:20px 0 0 20px">
-<h3>Security teams.</h3>
-<p>We understand the demands on security teams in modern organisations. Our founding partners have worked to protect companies in varied security roles since the early days of the internet.</p>
-<p>The approach we bring frees up your overloaded security professionals to focus on higher value work for your organisation by engaging the whole engineering function to build in product security.</p>
-</div>
-</div>
-</div>
-<div class=oc-item>
-<div class="row cleafix">
-<div class=col-xl-8>
-<img src=demos/business/images/carousel/3.jpg alt=Image>
-</div>
-<div class=col-xl-4 style="padding:20px 0 0 20px">
-<h3>Product management.</h3>
-<p>The people making decisions on the products you build and deliver to your customers are critical to the security of your organisation. </p>
-<p>Security is just one aspect of overall product quality and we bring a holistic, balanced view on securing products by through our work with your product management teams.</p>
-<p>Our coaching raises the quality of both the products you deliver and how you're delivering them through measurement and positive feedback.</p>
-</div>
-</div>
-</div>
-<div class=oc-item>
-<div class="row cleafix">
-<div class=col-xl-8>
-<img src=demos/business/images/carousel/4.jpg alt=Image>
-</div>
-<div class=col-xl-4 style="padding:20px 0 0 20px">
-<h3>Leadership.</h3>
-<p>Structuring your organisation to instil the right motivations to secure product development is essential. Many well-meaning initiatives to improve security fail due to antagonistic organisational structures.</p>
-<p>We work closely with your leadership team to ensure responsibilities and accountabilities are in the right place and that delivery processes are secure. Surfacing our learning and discoveries from delivery teams also brings essential information to organisational decision makers.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="container clearfix">
-<div class="container clearfix">
-<div class="heading-block bottommargin-lg center border-0" data-heading=RA>
-<h3 id=recent-articles class="nott ls0">Recent Articles</h3>
-</div>
-</div>
-<div class="post-grid row col-mb-30">
-<div class="entry col-lg-4 col-md-6">
-<div class="grid-inner shadow-sm card rounded-5">
-<a href=https://securedelivery.io/articles/chestertons-fence-and-monkeys/>
-<img src=/images/monkey.png alt="Article Image" title="Chesterton's Fence, and Monkeys" class=card-img-top>
-</a>
-<div class=p-4>
-<div class="entry-title mb-3">
-<h5 class="fw-medium text-primary mb-3">Security, Process</h5>
-<h3 class="nott ls0 h5" title="Chesterton's Fence, and Monkeys"><a href=https://securedelivery.io/articles/chestertons-fence-and-monkeys/>Chesterton's Fence, …</a></h3>
-</div>
-<div class="entry-content mt-4">
-<p class=mb-0>It can be hard to know how to change your ways of working to be more secure. Here we look at the types of security controls and what monkeys have to teach us about processes.</p>
-</div>
-<hr class=my-4>
-<div class="d-flex align-items-center">
-<img src=/images/authors/tai.jpg alt=Author class="rounded-circle me-3" width=48 height=48>
-<div class="entry-meta mt-0">
-<div>
-<h6 class="mb-1 h6">Toby Irvine</h6>
-<ul class=my-0>
-<li class=mb-0><i class=icon-calendar3></i> April 12, 2021</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="entry col-lg-4 col-md-6">
-<div class="grid-inner shadow-sm card rounded-5">
-<a href=https://securedelivery.io/articles/the-ratio/>
-<img src=/images/stormy-seas.png alt="Article Image" title="The Ratio" class=card-img-top>
-</a>
-<div class=p-4>
-<div class="entry-title mb-3">
-<h5 class="fw-medium text-primary mb-3">Security, Organisations</h5>
-<h3 class="nott ls0 h5" title="The Ratio"><a href=https://securedelivery.io/articles/the-ratio/>The Ratio</a></h3>
-</div>
-<div class="entry-content mt-4">
-<p class=mb-0>Your security team is overloaded. There are barely enough hours in the day to keep up with incoming requests, let alone improve ways of working. What's the cause of this?</p>
-</div>
-<hr class=my-4>
-<div class="d-flex align-items-center">
-<img src=/images/authors/tai.jpg alt=Author class="rounded-circle me-3" width=48 height=48>
-<div class="entry-meta mt-0">
-<div>
-<h6 class="mb-1 h6">Toby Irvine</h6>
-<ul class=my-0>
-<li class=mb-0><i class=icon-calendar3></i> March 15, 2021</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="entry col-lg-4 col-md-6">
-<div class="grid-inner shadow-sm card rounded-5">
-<a href=https://securedelivery.io/articles/what-is-the-cloud/>
-<img src=/images/clouds-and-bird.png alt="Article Image" title="What is The Cloud?" class=card-img-top>
-</a>
-<div class=p-4>
-<div class="entry-title mb-3">
-<h5 class="fw-medium text-primary mb-3">Security, Networks</h5>
-<h3 class="nott ls0 h5" title="What is The Cloud?"><a href=https://securedelivery.io/articles/what-is-the-cloud/>What is The Cloud?</a></h3>
-</div>
-<div class="entry-content mt-4">
-<p class=mb-0>The internet is a scary place. Thankfully we've got all our services on a private network and only accessible over a dedicated link. That's more secure, right? Right? Oh no...</p>
-</div>
-<hr class=my-4>
-<div class="d-flex align-items-center">
-<img src=/images/authors/tai.jpg alt=Author class="rounded-circle me-3" width=48 height=48>
-<div class="entry-meta mt-0">
-<div>
-<h6 class="mb-1 h6">Toby Irvine</h6>
-<ul class=my-0>
-<li class=mb-0><i class=icon-calendar3></i> July 20, 2020</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p><a href=/articles#articles data-scrollto=#articles class=button-link>See all our articles</a></p>
-</div>
-</div>
 <div class="section parallax topmargin-lg mb-0 border-top-0 clearfix" style=background-image:url(/demos/business/images/sections/2.jpg);background-size:cover data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
 <div class="container clearfix">
 <div class="row col-mb-50 cleafix">
@@ -419,8 +284,7 @@ Engineering Foundations Course
 </div>
 </div>
 <div class="section m-0 clearfix" style="padding:80px 0">
-</div></div>
-</section>
+</div>
 <footer id=footer class=border-0 style="padding:30px 0;background-color:#fff">
 <div class="container clearfix">
 <div class=footer-widgets-wrap>

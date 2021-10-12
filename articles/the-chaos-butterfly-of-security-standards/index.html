@@ -1,6 +1,5 @@
 <!doctype html><html dir=ltr lang=en-gb><html dir=ltr lang=en-us>
 <head>
-<meta name=generator content="Hugo 0.88.1">
 <meta charset=utf-8>
 <link rel="shortcut icon" href=https://securedelivery.io/favicon.ico>
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,700|Open+Sans:300,400,600,700,800,900&display=swap" rel=stylesheet type=text/css>
@@ -54,247 +53,81 @@
 </div>
 <div class=header-wrap-clone></div>
 </header>
-<section id=slider class="slider-element slider-parallax swiper_wrapper min-vh-60 min-vh-md-100 include-header" data-loop=true>
-<div class=slider-inner>
-<div class="swiper-container swiper-parent">
-<div class=swiper-wrapper>
-<div class="swiper-slide dark">
-<div class=container>
-<div class="slider-caption slider-caption-center">
+<section id=content>
+<div class="content-wrap pt-0 bg-light">
+<div class="container clearfix">
+<div class="entry-image align-full mb-0">
+<img src=/images/butterfly.png alt="Blog Single" class=align-wide-full>
+<div class="p-4 bg-white position-relative shadow-sm rounded text-center align-wide-lg" style=transform:translateY(-30%)>
+<div class="entry-title pt-3">
+<h2>The Chaos Butterfly of Security Standards</h2>
+</div>
+<div class="entry-meta mb-0 pb-3">
+<ul class="justify-content-center m-0">
+<li><i class=icon-calendar3></i> July 14, 2020</li>
+<li><a href=#><i class=icon-user></i> Toby Irvine</a></li>
+<li><i class=icon-folder-open></i> Security, Process</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="single-post mw-sm mx-auto">
+<div class="entry clearfix">
+<div class=clear></div>
+<div class=entry-content>
+<p>The mathematician and meteorologist, <a href=https://en.wikipedia.org/wiki/Edward_Norton_Lorenz>Edward Lorenz</a>, made the <a href=https://en.wikipedia.org/wiki/Butterfly_effect>Butterfly Effect</a> famous with his talk in 1972, &ldquo;<a href=http://eaps4.mit.edu/research/Lorenz/Butterfly_1972.pdf>Does the Flap of a Butterfly&rsquo;s Wings in Brazil Set Off a Tornado in Texas?</a>&rdquo; and it&rsquo;s stuck in the popular conscious ever since. The notion that small events in a chaotic system can build to large changes over time and space.</p>
+<h4 id=in-large-companies-i-frequently-see-a-hope-that-a-similar-mechanism-will-occur-when-a-security-standard-is-published-to-the-company-sharepoint-as-if-the-flapping-of-a-pdfs-pages-in-london-will-through-a-chaotic-system-cause-a-cyclone-over-bengaluru-to-rearrange-source-code-to-be-more-secure>In large companies I frequently see a hope that a similar mechanism will occur when a security standard is published to the company SharePoint. As if the flapping of a PDF&rsquo;s pages in London will, through a chaotic system, cause a cyclone over Bengaluru to rearrange source code to be more secure.</h4>
+<p>When we&rsquo;re trying to change behaviours at scale we have to think about direct and indirect influence and the audiences we&rsquo;re targeting with our activities. We may have a requirement to document and publish security standards, but let&rsquo;s not fool ourselves into thinking that the audience for them is the hundreds or thousands of delivery teams worldwide under constant pressure to deliver value, building and maintaining your complex business systems. Never mind getting <em>them</em> to engage with, and understand, your material - I&rsquo;ve seen security teams get absolutely no engagement or feedback from the <em>expert working groups</em> they have in the organisation to review and approve security standards. Of course the security team publishes anyway, in the absence of any review or approval from the wider business, because &ldquo;otherwise we&rsquo;d never publish anything!&rdquo;. Not the most effective state of affairs.</p>
+<p>If I may be permitted a small anecdote related to chaos theory, to lighten the mood and give the security standards people a chance to calm down. In 1998 I attended a lecture by <a href=https://en.wikipedia.org/wiki/Benoit_Mandelbrot>Professor Benoit Mandelbrot</a> at Cambridge University. He&rsquo;d just released his first book applying the mathematics of fractals to finance, &ldquo;Fractals and Scaling in Finance: Discontinuity, Concentration, Risk&rdquo;, and gave a talk on his research to a lecture hall packed with the best and brightest mathematicians, physicists and assorted distinguished Dons that Cambridge could offer. As a 22 year old doctoral student I was expecting a lot of it to go over my head but he delivered a talk that felt <em>from another universe entirely</em>. He was extremely enthusiastic and passionate, soaring over the world of mathematics and finance, and making references to &ldquo;mild&rdquo; and &ldquo;wild&rdquo; numbers. At the end of this wonderful but bizarre experience I sat, bewildered, as the host for the evening came out and thanked a slightly breathless Professor Mandelbrot, asking if there were any questions from the audience. Professor Mandelbrot scanned the assembled genius of the Cambridge lecture hall with bright eyes and was met with downard gazes, shuffling feet and the occasional nervous cough. Every single person in the room was as bewildered as me! Reminiscent of the times as a child at school when a guest speaker had come in and, afterwards, a teacher <em>desperately</em> tried to elicit a question from the class, the host tried his best to encourage a question from someone but to no avail. Professor Mandelbrot graciously departed the stage.</p>
+<p><img src=/images/mandelbrot.jpg alt="Professor Benoit Mandelbrot"></p>
+<p>Getting back on-topic, if you&rsquo;re trying to change behaviours in a large organisation and want to be effective:</p>
+<ol>
+<li>Determine <em>where</em> the activities you&rsquo;re trying to influence <em>actually happen</em></li>
+<li>Exert your influence as close to that as possible</li>
+<li>Use direct influence over indirect (push, don&rsquo;t rely on pull)</li>
+<li>Favour executable specifications and automation over documented processes</li>
+</ol>
+<p>Let&rsquo;s take an example. If you&rsquo;re tasked with ensuring that application delivery teams work securely and meet the regulatory requirements of your organisation you could write all the things they <strong>MUST</strong> do and <strong>MUST NOT</strong> do into a security policy, publish it to SharePoint and call it a day (no <strong>SHOULD</strong> or <strong>SHOULD NOT</strong>, please - if it&rsquo;s not mandatory it&rsquo;s not policy). This is unlikely to be effective: the delivery activities are happening elsewhere, it&rsquo;s relying on people pulling the information and it&rsquo;s a document that requires human interpretation and individual decision on what actions are required. Your outcome will vary across the organisation from no change in behaviour to some change that differs with each team&rsquo;s interpretation.</p>
+<p>To ensure the outcome we want, across the whole organisation, we have to take a different approach. There are things that delivery teams need to know and need to be doing. If they don&rsquo;t know these things and aren&rsquo;t doing these things then they cannot safely implement change to your organisation&rsquo;s systems. If they stop doing these things or, through changes to people on the teams, stop knowing these things then they cannot safely implement change to your organisation&rsquo;s systems. What we&rsquo;re defining here we could term a Licence to Operate:</p>
+<h4 id=a-licence-to-operate-instills-all-the-requirements-your-organisation-has-for-a-cross-functional-delivery-team-to-safely-deliver-change-to-production-_into-the-process-of-delivering-change-to-production_>A Licence to Operate instills all the requirements your organisation has for a cross-functional delivery team to safely deliver change to production <em>into the process of delivering change to production</em>.</h4>
+<p>We definitely want to guarantee that all our developers are trained in secure coding practices and that every change is being peer reviewed. From PCI DSS requirement 6.3.2:</p>
+<blockquote>
+<p>Code changes are reviewed by individuals other than the originating code author, and by individuals knowledgeable about code-review techniques and secure coding practices.</p>
+</blockquote>
+<p>A <em>very</em> good thing to do, since <a href="https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923379">73% of all security defects are caused by programming error</a> and peer review is so damn effective I can, and will, write an entire article on it alone. We could put this requirement into our security policy and hope, or we could check a training database when granting commit access to our version control system and <a href=https://docs.github.com/en/enterprise/2.21/user/github/administering-a-repository/enabling-required-reviews-for-pull-requests>enforce reviews for pull requests</a> on all repos. If we need to annually refresh people&rsquo;s secure coding knowledge we can script a check across all committer accounts in the version control system that sends notices when someone needs to update their training, and disables their account beyond a certain date if it&rsquo;s not done.</p>
+<p>Other requirements on delivery teams could be:</p>
+<ul>
+<li>They have no known-vulnerable dependencies included in their system</li>
+<li>The components being deployed have had a SAST/DAST/IAST check with no open Critical or High severity issues</li>
+<li>The system being changed has an up-to-date entry in the organisation&rsquo;s inventory management system with owners defined</li>
+<li>There is record of a manual penetration test having been performed within the last 12 months</li>
+</ul>
+<p>And if you have people or groups within your organisation that are nervous about delivery teams being continuously responsible for security and their own changes into production then that&rsquo;s a sign that they have requirements that need to be part of your Licence to Operate. Get them involved. Once their requirements are defined and implemented then everyone can have confidence that rapid delivery isn&rsquo;t compromising quality.</p>
+<p>Requirements can be checked by change control systems, deployment pipelines, or any part of the system in place that delivers change into production. Yes, you will need structured data and you will need engineering effort to integrate these checks - if you&rsquo;re concerned with application security at scale then these things are fundamental to success.</p>
+<div class=clear></div>
+<div class="si-share border-0 d-flex justify-content-between align-items-center">
+<span>Share this Post:</span>
 <div>
-<h2 class="font-primary nott">
-SECURE
-<span class=text-rotater data-separator=| data-typed=true data-speed=50 data-backdelay=3000 data-loop=true>
-<span class="t-rotate font-weight-bold font-primary nott">Leadership|Product|Design|Engineering|DELIVERY</span>
-</span>
-</h2>
-<p class="fw-light font-primary d-none d-sm-block">Best-in-class support to secure product development across your whole org.</p>
-<a href=#what-we-do data-scrollto=#what-we-do class="button button-rounded button-large nott ls0 font-primary">Find Out More</a>
+<a href=# class="social-icon si-borderless si-pinterest">
+<i class=icon-linkedin></i>
+<i class=icon-linkedin></i>
+</a>
+<a href=# class="social-icon si-borderless si-twitter">
+<i class=icon-twitter></i>
+<i class=icon-twitter></i>
+</a>
+<a href=# class="social-icon si-borderless si-email3">
+<i class=icon-email3></i>
+<i class=icon-email3></i>
+</a>
 </div>
 </div>
 </div>
-<div class=swiper-slide-bg style=background-image:url(/demos/business/images/slider/1.jpg)></div>
 </div>
 </div>
 </div>
-<a href=# data-scrollto=#content data-offset=0 class="dark one-page-arrow"><img class="infinite animated fadeInDown" src=/demos/business/images/mouse.svg alt=Image></a>
 </div>
 </section>
-<section id=content>
-<div class="content-wrap pb-0" style=z-index:1>
-<div class="container topmargin clearfix">
-<div class="heading-block center border-0" data-heading=W>
-<h3 id=what-we-do>What We Do</h3>
-</div>
-<div class="row clearfix">
-<div class="center col-lg-8 offset-lg-2 bottommargin">
-<h3 class="text-rotater font-secondary" data-separator=, data-rotate=fadeInRight data-speed=3500>
-We're the trusted partner in digital product security for organisations across many industries. We specialise in proven, scalable solutions to training, tooling and instilling the right ways of working to secure digital product development for global, regulated organisations.
-</h3>
-</div>
-</div>
-<div class="row justify-content-center gutter-50 col-mb-50">
-<div class=clear></div>
-<div class="clear my-3"></div>
-<div class="col-lg-3 col-sm-6">
-<div class="feature-box fbox-effect flex-column border p-4 rounded-3">
-<div class="fbox-icon mb-4">
-<a href=#><img src=images/icons/student.svg alt="Feature Icon" class="bg-transparent rounded-0"></a>
-</div>
-<div class=fbox-content>
-<h3>Practical Training</h3>
-<p>Hands-on training from the best practioners of product security in the world. The right knowledge to the right people.</p>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="feature-box fbox-effect flex-column border p-4 rounded-3">
-<div class="fbox-icon mb-4">
-<a href=#><img src=images/icons/social.svg alt="Feature Icon" class="bg-transparent rounded-0"></a>
-</div>
-<div class=fbox-content>
-<h3>Tailored Workshops</h3>
-<p>Establish the best approach for your organisation across people, process and technology with our expert-led workshops.</p>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="feature-box fbox-effect flex-column border p-4 rounded-3">
-<div class="fbox-icon mb-4">
-<a href=#><img src=images/icons/shield-security.svg alt="Feature Icon" class="bg-transparent rounded-0"></a>
-</div>
-<div class=fbox-content>
-<h3>Secure By Design</h3>
-<p>Introduce threat modelling for agile product development with our open, online platform to support remote teams.</p>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="feature-box fbox-effect flex-column border p-4 rounded-3">
-<div class="fbox-icon mb-4">
-<a href=#><img src=images/icons/rotate-right.svg alt="Feature Icon" class="bg-transparent rounded-0"></a>
-</div>
-<div class=fbox-content>
-<h3>Continuous Coaching</h3>
-<p>Support for your whole org as you integrate world-class security practices into your product development.</p>
-</div>
-</div>
-</div>
-<div class="clear my-3"></div>
-</div>
-</div>
-<div class="section bg-transparent clearfix">
-<div class="container clearfix">
-<div class="heading-block bottommargin-lg center border-0" data-heading=H>
-<h3 id=how-we-work class="nott ls0">How We Work</h3>
-</div>
-</div>
-<div id=oc-features class="owl-carousel owl-carousel-full image-carousel carousel-widget customjs">
-<div class=oc-item>
-<div class="row cleafix">
-<div class=col-xl-8>
-<img src=demos/business/images/carousel/1.jpg alt=Image>
-</div>
-<div class=col-xl-4 style="padding:20px 0 0 20px">
-<h3>Engineering teams.</h3>
-<p>We were founded on solid engineering principles and experience. Our practitioners have decades of experience in software engineering and speak credibly to teams across all industries.</p>
-<p>Security knowledge is not to be held by a select few. We work across all of your engineering teams to instil the knowledge and approaches necessary to secure engineering at global scale.</p>
-</div>
-</div>
-</div>
-<div class=oc-item>
-<div class="row cleafix">
-<div class=col-xl-8>
-<img src=demos/business/images/carousel/2.jpg alt=Image>
-</div>
-<div class=col-xl-4 style="padding:20px 0 0 20px">
-<h3>Security teams.</h3>
-<p>We understand the demands on security teams in modern organisations. Our founding partners have worked to protect companies in varied security roles since the early days of the internet.</p>
-<p>The approach we bring frees up your overloaded security professionals to focus on higher value work for your organisation by engaging the whole engineering function to build in product security.</p>
-</div>
-</div>
-</div>
-<div class=oc-item>
-<div class="row cleafix">
-<div class=col-xl-8>
-<img src=demos/business/images/carousel/3.jpg alt=Image>
-</div>
-<div class=col-xl-4 style="padding:20px 0 0 20px">
-<h3>Product management.</h3>
-<p>The people making decisions on the products you build and deliver to your customers are critical to the security of your organisation. </p>
-<p>Security is just one aspect of overall product quality and we bring a holistic, balanced view on securing products by through our work with your product management teams.</p>
-<p>Our coaching raises the quality of both the products you deliver and how you're delivering them through measurement and positive feedback.</p>
-</div>
-</div>
-</div>
-<div class=oc-item>
-<div class="row cleafix">
-<div class=col-xl-8>
-<img src=demos/business/images/carousel/4.jpg alt=Image>
-</div>
-<div class=col-xl-4 style="padding:20px 0 0 20px">
-<h3>Leadership.</h3>
-<p>Structuring your organisation to instil the right motivations to secure product development is essential. Many well-meaning initiatives to improve security fail due to antagonistic organisational structures.</p>
-<p>We work closely with your leadership team to ensure responsibilities and accountabilities are in the right place and that delivery processes are secure. Surfacing our learning and discoveries from delivery teams also brings essential information to organisational decision makers.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="container clearfix">
-<div class="container clearfix">
-<div class="heading-block bottommargin-lg center border-0" data-heading=RA>
-<h3 id=recent-articles class="nott ls0">Recent Articles</h3>
-</div>
-</div>
-<div class="post-grid row col-mb-30">
-<div class="entry col-lg-4 col-md-6">
-<div class="grid-inner shadow-sm card rounded-5">
-<a href=https://securedelivery.io/articles/chestertons-fence-and-monkeys/>
-<img src=/images/monkey.png alt="Article Image" title="Chesterton's Fence, and Monkeys" class=card-img-top>
-</a>
-<div class=p-4>
-<div class="entry-title mb-3">
-<h5 class="fw-medium text-primary mb-3">Security, Process</h5>
-<h3 class="nott ls0 h5" title="Chesterton's Fence, and Monkeys"><a href=https://securedelivery.io/articles/chestertons-fence-and-monkeys/>Chesterton's Fence, …</a></h3>
-</div>
-<div class="entry-content mt-4">
-<p class=mb-0>It can be hard to know how to change your ways of working to be more secure. Here we look at the types of security controls and what monkeys have to teach us about processes.</p>
-</div>
-<hr class=my-4>
-<div class="d-flex align-items-center">
-<img src=/images/authors/tai.jpg alt=Author class="rounded-circle me-3" width=48 height=48>
-<div class="entry-meta mt-0">
-<div>
-<h6 class="mb-1 h6">Toby Irvine</h6>
-<ul class=my-0>
-<li class=mb-0><i class=icon-calendar3></i> April 12, 2021</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="entry col-lg-4 col-md-6">
-<div class="grid-inner shadow-sm card rounded-5">
-<a href=https://securedelivery.io/articles/the-ratio/>
-<img src=/images/stormy-seas.png alt="Article Image" title="The Ratio" class=card-img-top>
-</a>
-<div class=p-4>
-<div class="entry-title mb-3">
-<h5 class="fw-medium text-primary mb-3">Security, Organisations</h5>
-<h3 class="nott ls0 h5" title="The Ratio"><a href=https://securedelivery.io/articles/the-ratio/>The Ratio</a></h3>
-</div>
-<div class="entry-content mt-4">
-<p class=mb-0>Your security team is overloaded. There are barely enough hours in the day to keep up with incoming requests, let alone improve ways of working. What's the cause of this?</p>
-</div>
-<hr class=my-4>
-<div class="d-flex align-items-center">
-<img src=/images/authors/tai.jpg alt=Author class="rounded-circle me-3" width=48 height=48>
-<div class="entry-meta mt-0">
-<div>
-<h6 class="mb-1 h6">Toby Irvine</h6>
-<ul class=my-0>
-<li class=mb-0><i class=icon-calendar3></i> March 15, 2021</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="entry col-lg-4 col-md-6">
-<div class="grid-inner shadow-sm card rounded-5">
-<a href=https://securedelivery.io/articles/what-is-the-cloud/>
-<img src=/images/clouds-and-bird.png alt="Article Image" title="What is The Cloud?" class=card-img-top>
-</a>
-<div class=p-4>
-<div class="entry-title mb-3">
-<h5 class="fw-medium text-primary mb-3">Security, Networks</h5>
-<h3 class="nott ls0 h5" title="What is The Cloud?"><a href=https://securedelivery.io/articles/what-is-the-cloud/>What is The Cloud?</a></h3>
-</div>
-<div class="entry-content mt-4">
-<p class=mb-0>The internet is a scary place. Thankfully we've got all our services on a private network and only accessible over a dedicated link. That's more secure, right? Right? Oh no...</p>
-</div>
-<hr class=my-4>
-<div class="d-flex align-items-center">
-<img src=/images/authors/tai.jpg alt=Author class="rounded-circle me-3" width=48 height=48>
-<div class="entry-meta mt-0">
-<div>
-<h6 class="mb-1 h6">Toby Irvine</h6>
-<ul class=my-0>
-<li class=mb-0><i class=icon-calendar3></i> July 20, 2020</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p><a href=/articles#articles data-scrollto=#articles class=button-link>See all our articles</a></p>
-</div>
-</div>
 <div class="section parallax topmargin-lg mb-0 border-top-0 clearfix" style=background-image:url(/demos/business/images/sections/2.jpg);background-size:cover data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
 <div class="container clearfix">
 <div class="row col-mb-50 cleafix">
@@ -419,8 +252,7 @@ Engineering Foundations Course
 </div>
 </div>
 <div class="section m-0 clearfix" style="padding:80px 0">
-</div></div>
-</section>
+</div>
 <footer id=footer class=border-0 style="padding:30px 0;background-color:#fff">
 <div class="container clearfix">
 <div class=footer-widgets-wrap>
