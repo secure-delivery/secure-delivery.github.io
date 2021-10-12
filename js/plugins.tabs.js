@@ -21,8 +21,8 @@ window.SEMICOLON_tabsInit = function( $tabsEl ){
 		elActive = elActive - 1;
 
 		let windowHash = window.location.hash;
-		if( jQuery(windowHash).length > 0 ) {
-			elActive = jQuery( windowHash ).index();
+		if( $(windowHash).length > 0 && element.find(windowHash).length > 0 ) {
+			elActive = $( windowHash ).index();
 		}
 
 		element.tabs({
@@ -40,13 +40,8 @@ window.SEMICOLON_tabsInit = function( $tabsEl ){
 		SEMICOLON_tabsResponsive( element );
 		SEMICOLON_tabsResponsiveResizeInit( element );
 
-		let resizeTimer;
-
-		$(window).on( 'resize', function() {
-			clearTimeout(resizeTimer);
-			resizeTimer = setTimeout(function() {
-				SEMICOLON_tabsResponsiveResizeInit( element );
-			}, 250);
+		$(window).on( 'scwWindowResize', function() {
+			SEMICOLON_tabsResponsiveResizeInit( element );
 		});
 	});
 
@@ -78,7 +73,8 @@ window.SEMICOLON_tabsResponsive = function( $tabsEl ){
 
 window.SEMICOLON_tabsResponsiveResizeInit = function( $tabsEl ){
 
-	$tabsEl = $tabsEl.filter('.tabs-responsive');
+	let $body	= $('body');
+	$tabsEl		= $tabsEl.filter('.tabs-responsive');
 
 	if( $tabsEl.length < 1 ){
 		return true;
@@ -89,7 +85,7 @@ window.SEMICOLON_tabsResponsiveResizeInit = function( $tabsEl ){
 			elActive = element.tabs( 'option', 'active' ) + 1,
 			elementAccStyle = element.attr('data-accordion-style');
 
-		if( $('body').hasClass('device-sm') || $('body').hasClass('device-xs') ) {
+		if( $body.hasClass('device-sm') || $body.hasClass('device-xs') ) {
 
 			element.find('.tab-nav').addClass('d-none');
 			element.find('.tab-container').addClass( 'accordion '+ elementAccStyle ).attr('data-active', elActive);
@@ -97,7 +93,7 @@ window.SEMICOLON_tabsResponsiveResizeInit = function( $tabsEl ){
 			element.find('.accordion-header').removeClass('d-none');
 			SEMICOLON.widget.accordions({ 'parent': element });
 
-		} else if( $('body').hasClass('device-md') || $('body').hasClass('device-lg') || $('body').hasClass('device-xl') ) {
+		} else if( $body.hasClass('device-md') || $body.hasClass('device-lg') || $body.hasClass('device-xl') ) {
 
 			element.find('.tab-nav').removeClass('d-none');
 			element.find('.tab-container').removeClass( 'accordion '+ elementAccStyle ).attr('data-active', '');

@@ -72,7 +72,7 @@
 /* style-3 */
 .checkbox-style:checked + .checkbox-style-3-label:before,
 .radio-style:checked + .radio-style-3-label:before {
-	content: "\e116";
+	content: "\e92b";
 	font-family: 'lined-icons';
 	background: #1ABC9C;
 	color: #FFF;

@@ -130,6 +130,9 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	---------------------------------------------------*/
 
 	function spam_keyword_check( $submitted, $spamwords ) {
+		if( is_array( $submitted ) ) {
+			return false;
+		}
 		if( !is_array( $spamwords ) ) $spamwords = array( $spamwords );
 		foreach( $spamwords as $spamstring ) {
 			if( ( $position = stripos( $submitted, $spamstring ) ) !== false ) return $position;
@@ -240,7 +243,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 			$value = implode( ', ', $value );
 		}
 
-		$fields[$name] = $value;
+		$fields[$name] = nl2br( filter_var( $value, FILTER_SANITIZE_SPECIAL_CHARS ) );
 
 	}
 
@@ -277,10 +280,10 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 			$response[] = $fieldname . ': ' . $fieldvalue;
 		} else {
 			$fieldname = '<tr>
-								<td class="hero-subheader__title" style="font-size: 16px; line-height: 24px; font-weight: bold; padding: 0 0 5px 0;" align="left">' . $fieldname . '</td>
+								<td style="font-size: 16px; line-height: 24px; font-weight: bold; padding: 0 0 5px 0;" align="left">' . $fieldname . '</td>
 							</tr>';
 			$fieldvalue = '<tr>
-								<td class="hero-subheader__content" style="font-size: 16px; line-height: 24px; color: #777777; padding: 0 15px 30px 0;" align="left">' . $fieldvalue . '</td>
+								<td style="font-size: 16px; line-height: 24px; color: #777777; padding: 0 15px 30px 0;" align="left">' . $fieldvalue . '</td>
 							</tr>';
 			$response[] = $fieldname . $fieldvalue;
 		}
@@ -288,17 +291,15 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
 	$referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>This Form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
 
-	$html_before = '<table class="full-width-container" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" bgcolor="#eeeeee" style="width: 100%; height: 100%; padding: 50px 0 50px 0;">
+	$html_before = '<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" bgcolor="#eeeeee" style="width: 100%; height: 100%; padding: 50px 0 50px 0;">
 				<tr>
 					<td align="center" valign="top">
-						<!-- / 700px container -->
-						<table class="container" border="0" cellpadding="0" cellspacing="0" width="84%" bgcolor="#ffffff" style="width: 84%;">
+						<table border="0" cellpadding="0" cellspacing="0" width="84%" bgcolor="#ffffff" style="width: 84%;">
 							<tr>
 								<td align="center" valign="top">
 									';
 
-	$html_after = '<!-- /// Footer -->
-								</td>
+	$html_after = '</td>
 							</tr>
 						</table>
 					</td>
@@ -309,25 +310,24 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 		$body = implode( "<br>", $response ) . $referrer;
 	} else {
 		$html = $html_before . '<!-- / Header -->
-									<table class="container header" border="0" cellpadding="0" cellspacing="0" width="84%" style="width: 84%;">
+									<table border="0" cellpadding="0" cellspacing="0" width="84%" style="width: 84%;">
 										<tr>
 											<td style="padding: 30px 0 30px 0; border-bottom: solid 1px #eeeeee; font-size: 30px; font-weight: bold; text-decoration: none; color: #000000;" align="left">
 												' . $html_title . '
 											</td>
 										</tr>
 									</table>
-									<!-- /// Header -->
 
-									<!-- / Hero subheader -->
-									<table class="container hero-subheader" border="0" cellpadding="0" cellspacing="0" width="84%" style="width: 84%; padding: 60px 0 30px 0;"">
+									<!-- / Sub-Header -->
+									<table border="0" cellpadding="0" cellspacing="0" width="84%" style="width: 84%; padding: 60px 0 30px 0;"">
 										' . implode( '', $response ) . '
 									</table>
 
 									<!-- / Footer -->
-									<table class="container" border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
 										<tr>
 											<td align="center">
-												<table class="container" border="0" cellpadding="0" cellspacing="0" width="84%" align="center" style="border-top: 1px solid #eeeeee; width: 84%;">
+												<table border="0" cellpadding="0" cellspacing="0" width="84%" align="center" style="border-top: 1px solid #eeeeee; width: 84%;">
 													<tr>
 														<td style="color: #d5d5d5; text-align: center; font-size: 12px; padding: 30px 0 30px 0; line-height: 22px;">' . strip_tags( $referrer ) . '</td>
 													</tr>
@@ -357,27 +357,26 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 		$autoresponder->Subject = $ar_subject;
 
 		$ar_body = $html_before . '<!-- / Header -->
-					<table class="container header" border="0" cellpadding="0" cellspacing="0" width="84%" style="width: 84%;">
+					<table border="0" cellpadding="0" cellspacing="0" width="84%" style="width: 84%;">
 						<tr>
 							<td style="padding: 30px 0 30px 0; border-bottom: solid 1px #eeeeee; font-size: 30px; font-weight: bold; text-decoration: none; color: #000000;" align="left">
 								' . $ar_title . '
 							</td>
 						</tr>
 					</table>
-					<!-- /// Header -->
 
-					<!-- / Hero subheader -->
-					<table class="container hero-subheader" border="0" cellpadding="0" cellspacing="0" width="84%" style="width: 84%; padding: 60px 0 30px 0;"">
+					<!-- / Sub-Header -->
+					<table border="0" cellpadding="0" cellspacing="0" width="84%" style="width: 84%; padding: 60px 0 30px 0;"">
 						<tr>
-							<td class="hero-subheader__content" style="font-size: 16px; line-height: 26px; color: #777777; padding: 0 15px 30px 0;" align="left">' . $ar_message . '</td>
+							<td style="font-size: 16px; line-height: 26px; color: #777777; padding: 0 15px 30px 0;" align="left">' . $ar_message . '</td>
 						</tr>
 					</table>
 
 					<!-- / Footer -->
-					<table class="container" border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+					<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
 						<tr>
 							<td align="center">
-								<table class="container" border="0" cellpadding="0" cellspacing="0" width="84%" align="center" style="border-top: 1px solid #eeeeee; width: 84%;">
+								<table border="0" cellpadding="0" cellspacing="0" width="84%" align="center" style="border-top: 1px solid #eeeeee; width: 84%;">
 									<tr>
 										<td style="color: #d5d5d5; text-align: center; font-size: 12px; padding: 30px 0 30px 0; line-height: 22px;">' . $ar_footer . '</td>
 									</tr>

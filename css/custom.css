@@ -5,18 +5,4 @@
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
 
-.section { margin: 0; }
-.feature-box h3 {
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 0;
-    color: #333;
-}
-.content-wrap { padding-bottom: 0; }
-.t300 { font-weight: 300!important;  }
 
-.entry-content li {
-	margin-left: 3em;
-}

@@ -36,8 +36,8 @@ window.SEMICOLON_roundedSkillInit = function( $roundedSkillEl ){
 
 		if( $('body').hasClass('device-xl') || $('body').hasClass('device-lg') ){
 			element.animate({opacity:0}, 10);
-			let observer = new IntersectionObserver((entries, observer) => {
-				entries.forEach((entry) => {
+			let observer = new IntersectionObserver( function(entries, observer){
+				entries.forEach( function(entry){
 					if (entry.isIntersecting) {
 						if (!element.hasClass('skills-animated')) {
 							var t = setTimeout( function(){ element.css({opacity: 1}); }, 100 );

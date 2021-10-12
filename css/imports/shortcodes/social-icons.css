@@ -471,7 +471,7 @@ body:not(.device-touch) .social-icon i {
 
 .si-instagram:hover,
 .si-colored.si-instagram {
-  background-color: #3F729B !important;
+  background-color: #8A3AB9 !important;
 }
 
 .si-quora:hover,
@@ -518,6 +518,24 @@ body:not(.device-touch) .social-icon i {
 .si-colored.si-fivehundredpx {
   background-color: #111 !important;
 }
+
+.si-tiktok:hover,
+.si-colored.si-tiktok { background-color: #000 !important; }
+
+.si-whatsapp:hover,
+.si-colored.si-whatsapp { background-color: #25D366 !important; }
+
+.si-tripadvisor:hover,
+.si-colored.si-tripadvisor { background-color: #00AF87 !important; }
+
+.si-gpay:hover,
+.si-colored.si-gpay { background-color: #6877DF !important; }
+
+.si-unsplash:hover,
+.si-colored.si-unsplash { background-color: #111 !important; }
+
+.si-snapchat:hover,
+.si-colored.si-snapchat { background-color: #FFFC00 !important; }
 
 /* Social Icons - colors
 -----------------------------------------------------------------*/
@@ -717,7 +735,7 @@ body:not(.device-touch) .social-icon i {
   color: #126567;
 }
 .si-text-color.si-instagram i {
-  color: #3F729B;
+  color: #8A3AB9;
 }
 .si-text-color.si-quora i {
   color: #A82400;
@@ -746,6 +764,12 @@ body:not(.device-touch) .social-icon i {
 .si-text-color.si-fivehundredpx i {
   color: #111;
 }
+.si-text-color.si-tiktok i { color: #000; }
+.si-text-color.si-whatsapp i { color: #25D366; }
+.si-text-color.si-tripadvisor i { color: #00AF87; }
+.si-text-color.si-gpay i { color: #DB4437; }
+.si-text-color.si-unsplash i { color: #111; }
+.si-text-color.si-snapchat i { color: #FFFC00; }
 .si-text-color:hover {
   color: #FFF;
 }
