@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v18-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v18-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: semi-bold;
+  font-weight: 600;
+  src: url('../fonts/montserrat-v18-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v18-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v18-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v18-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v18-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v18-latin-600.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+body {
+  text-align: left;
+  padding: 40px 44px;
+  font-family: Montserrat,sans-serif;
+  background: rgb(37, 48, 94) no-repeat right center fixed url("/images/bg-fade.png");
+  background-size: auto 110%;
+  background-position: center right -240px;
+}
+
+@media (max-width: 767px) {
+
+    body{
+        background-image: none;
+    }
+
+}
+
+h1 {
+  color: #fff;
+  
+}
+
+h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 28px;
+    
+    line-height: 1.35em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 21px;
+
+    line-height: 1.35em;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #F8E9A1;
+    font-weight: 600;
+    font-size: 16px;
+
+    line-height: 1.35em;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.logo {
+    width: 380px;
+    margin-bottom: 10px;
+}
+.calendly-inline-widget {
+    padding: 0;
+}
+
+</style>
+</script>
+</head>
+<body>
+
+    <img class="logo" src="/images/SD_Horiz_Colour_Logo_NoStrapwhite.png">
+    <h2>We run regular, open workshop sessions on the foundations of product and application security for current and new clients.</h2>
+        
+    <h3>Choose the part of the world you're based in for times convenient for you.</h3>
+
+    <h4>Europe, Middle East & Africa</h3>
+
+    <div id="eventbrite-widget-container-211026805857"></div>
+
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+    <script type="text/javascript">
+        var exampleCallback = function() {
+            console.log('Order complete!');
+        };
+
+        window.EBWidgets.createWidget({
+            // Required
+            widgetType: 'checkout',
+            eventId: '211026805857',
+            iframeContainerId: 'eventbrite-widget-container-211026805857',
+
+            // Optional
+            iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+        });
+    </script>
+
+    <h4>Americas</h3>
+    <div id="eventbrite-widget-container-211777310637"></div>
+
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+    <script type="text/javascript">
+        var exampleCallback = function() {
+            console.log('Order complete!');
+        };
+
+        window.EBWidgets.createWidget({
+            // Required
+            widgetType: 'checkout',
+            eventId: '211777310637',
+            iframeContainerId: 'eventbrite-widget-container-211777310637',
+
+            // Optional
+            iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+        });
+    </script>
+
+</body>
+</html>
