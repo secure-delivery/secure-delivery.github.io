@@ -6428,7 +6428,8 @@ body:not(.has-plugin-html5video) .video-wrap video {
 	width: 8.333333% !important;
 }
 
-.fslider.flex-thumb-grid .flex-control-nav.flex-control-thumbs li img {
+.fslider.flex-thumb-grid .flex-control-nav.flex-control-thumbs li 
+ {
 	width: 100% !important;
 	height: auto !important;
 }
@@ -16792,3 +16793,6 @@ label.checkbox { padding-left: 20px; }
 }
 
 
+.article img {
+	margin: 20px 0;
+}
