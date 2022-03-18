@@ -273,6 +273,10 @@ table,
 fieldset,
 form { margin-bottom: 30px; }
 
+ol, ul {
+	margin-left: 36px;
+}
+
 small { font-family: 'Lato', sans-serif; }
 
 
@@ -16795,4 +16799,14 @@ label.checkbox { padding-left: 20px; }
 
 .article img {
 	margin: 20px 0;
+}
+
+.training .entry-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    filter: drop-shadow(3px 3px 3px #666);
 }
