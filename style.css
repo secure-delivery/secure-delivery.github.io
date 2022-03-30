@@ -16801,10 +16801,22 @@ label.checkbox { padding-left: 20px; }
 	margin: 20px 0;
 }
 
-.article p {
+.article p, .article ul, .article ol {
 	font-size: 18px;
 	line-height: 1.8;
 	color: #292929;
+}
+
+.article ul, .article ol {
+	margin-top: 30px;
+}
+
+.article li {
+	margin-bottom: 20px;
+}
+
+.article .entry-content img {
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
 .article a {
@@ -16828,6 +16840,10 @@ label.checkbox { padding-left: 20px; }
 	margin: 30px 0;
 	font-size: 1.125rem;
 	border-left: 5px solid #EEE;
+}
+
+.article .author-bio p {
+	font-size: 16px;
 }
 
 .training .entry-badge {
