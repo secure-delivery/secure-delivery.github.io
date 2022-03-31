@@ -16796,9 +16796,23 @@ label.checkbox { padding-left: 20px; }
 	animation-name: fadeOutUpSmall;
 }
 
-
 .article img {
 	margin: 20px 0;
+}
+
+.article figure {
+	text-align: center;
+	margin: 40px 0;
+}
+
+.article figure img {
+	margin: 0;
+}
+
+.article figure figcaption p {
+	margin-top: 5px;
+	color: rgb(117, 117, 117);
+	font-size: 16px;
 }
 
 .article p, .article ul, .article ol {
