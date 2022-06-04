@@ -6,3 +6,45 @@
 -----------------------------------------------------------------*/
 
 
+.highlight-coral {
+	background: #f76d6d;
+	padding: 0 6px;
+	margin: 0 -3px;
+}
+
+.highlight-blue {
+	background: #374785;
+	padding: 0 6px;
+	margin: 0 -3px;
+}
+
+.highlight-navy {
+	background: #24305e;
+	padding: 0 6px;
+	margin: 0 -3px;
+}
+
+.text-coral {
+	color: #f76d6d !important;
+}
+
+.text-blue {
+	color: #374785 !important;
+}
+
+.text-navy {
+	color: #24305e !important;
+}
+
+.fbox-content p {
+	color: #777;
+}
+
+.text-rotater {
+	color: #777;
+}
+
+.menu-link {
+	text-transform: uppercase;
+	font-weight: 800;
+}
