@@ -70,6 +70,20 @@ background-color: #374785;
 border-color: #374785;
 }
 
+.feature-list {
+	list-style-type: none;
+	margin-left: -2rem;
+}
+
+.feature-list li {
+	margin-bottom: 30px;
+	background-image: url(/images/list-arrow.svg);
+	background-position: 0 14px;
+	background-size: 1.4rem 1.4rem;
+	background-repeat: no-repeat;
+	padding-left: 2rem;
+}
+
 /* News styles */
 .news figure {
 	text-align: center;
