@@ -36,6 +36,17 @@
 	color: #24305e !important;
 }
 
+.fallback .hero-banner { background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7)), url('/images/hero.jpg') }
+.webp .hero-banner { background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7)), url('/images/hero.webp') }
+.avif .hero-banner { background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7)), url('/images/hero.avif') }
+
+.hero-banner {
+	background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7)), top center no-repeat;
+	background-size: cover;
+}
+
+
+
 .simply-scaled-security {
 	color: #f76d6d !important;
 	font-weight: 800;
