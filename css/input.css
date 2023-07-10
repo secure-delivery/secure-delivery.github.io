@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footnote-ref {
+    text-decoration: none;
+    padding-left: 1px;
+}
+
+.footnote-backref {
+    text-decoration: none;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security, Process on Secure Delivery</title>
+    <link>https://securedelivery.io/tags/security-process/</link>
+    <description>Recent content in Security, Process on Secure Delivery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Apr 2021 08:14:42 +0100</lastBuildDate><atom:link href="https://securedelivery.io/tags/security-process/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chesterton&#39;s Fence, and Monkeys</title>
+      <link>https://securedelivery.io/articles/chestertons-fence-and-monkeys/</link>
+      <pubDate>Mon, 12 Apr 2021 08:14:42 +0100</pubDate>
+      
+      <guid>https://securedelivery.io/articles/chestertons-fence-and-monkeys/</guid>
+      <description>Chesterton&amp;rsquo;s Fence, and Monkeys G. K. Chesterton—writer; modernist philosopher; friend to George Bernard Shaw, H. G. Wells and Bertrand Russell but, most importantly, author of a piece I can torture into an article on security.
+Chesterton&amp;rsquo;s fence In the matter of reforming things, as distinct from deforming them, there is one plain and simple principle; a principle which will probably be called a paradox. There exists in such a case a certain institution or law; let us say, for the sake of simplicity, a fence or gate erected across a road.</description>
+    </item>
+    
+    <item>
+      <title>The Chaos Butterfly of Security Standards</title>
+      <link>https://securedelivery.io/articles/the-chaos-butterfly-of-security-standards/</link>
+      <pubDate>Tue, 14 Jul 2020 09:32:42 +0100</pubDate>
+      
+      <guid>https://securedelivery.io/articles/the-chaos-butterfly-of-security-standards/</guid>
+      <description>The mathematician and meteorologist, Edward Lorenz, made the Butterfly Effect famous with his talk in 1972, &amp;ldquo;Does the Flap of a Butterfly&amp;rsquo;s Wings in Brazil Set Off a Tornado in Texas?&amp;rdquo; and it&amp;rsquo;s stuck in the popular conscious ever since. The notion that small events in a chaotic system can build to large changes over time and space.
+In large companies I frequently see a hope that a similar mechanism will occur when a security standard is published to the company SharePoint.</description>
+    </item>
+    
+  </channel>
+</rss>

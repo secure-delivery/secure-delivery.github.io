@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Secure Delivery</title>
+    <link>https://securedelivery.io/news/</link>
+    <description>Recent content in News on Secure Delivery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Aug 2022 16:25:51 +0000</lastBuildDate><atom:link href="https://securedelivery.io/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CREST Announces OVS Programme in Collaboration with OWASP</title>
+      <link>https://securedelivery.io/news/crest-announces-ovs-programme-for-structured-verification-of-web-mobile-application-security/</link>
+      <pubDate>Thu, 04 Aug 2022 16:25:51 +0000</pubDate>
+      
+      <guid>https://securedelivery.io/news/crest-announces-ovs-programme-for-structured-verification-of-web-mobile-application-security/</guid>
+      <description>CREST, an international not-for-profit, membership body representing the global cyber security industry, has just announced their OWASP Verification Standard (OVS) programme, heralding a new quality assurance benchmark for the global application security industry.
+Developed in consultation with the OWASP (Open Web Application Security Project) Foundation, the programme &amp;ldquo;provides mobile and web app developers with greater security assurance and accredited organisations with enhanced access to the growing app development industry.&amp;rdquo;
+Underpinned by OWASP’s Application Security Verification Standard (ASVS) and Mobile Application Security Verification Standard (MASVS) the OVS programme furthers their mission of building trust in the digital world by raising professional standards and delivering measurable quality assurance for the global cyber security industry.</description>
+    </item>
+    
+    <item>
+      <title>We&#39;re attending Money20/20 Europe in June</title>
+      <link>https://securedelivery.io/news/money-2020-europe/</link>
+      <pubDate>Mon, 06 Jun 2022 08:22:43 +0000</pubDate>
+      
+      <guid>https://securedelivery.io/news/money-2020-europe/</guid>
+      <description>It&amp;rsquo;s fintech&amp;rsquo;s biggest conversation and we&amp;rsquo;re a part of it. Money20/20 is happening in Amsterdam from June 7-9 and we&amp;rsquo;re attending. We&amp;rsquo;re excited to catch up with all the leaders and challengers in fintech and if you see us there then come and say hi!
+If you want to make sure you don&amp;rsquo;t miss us, email enquiries@securedelivery.io, use the chat function on our website, or the Contact Us form below to arrange a meet up.</description>
+    </item>
+    
+    <item>
+      <title>Our Online Threat Modelling Tool Hits 1000 Players</title>
+      <link>https://securedelivery.io/news/online-agile-threat-modelling-tool-copi-hits-1000-players/</link>
+      <pubDate>Wed, 01 Jun 2022 10:41:17 +0000</pubDate>
+      
+      <guid>https://securedelivery.io/news/online-agile-threat-modelling-tool-copi-hits-1000-players/</guid>
+      <description>Since launching Copi last year, we&amp;rsquo;ve been thrilled that people have been increasingly using it among their teams to run online threat modelling games, and we&amp;rsquo;ve just hit 1,000 total players! Both Cornucopia and Elevation of Privilege versions are available with the latest decks for each.
+If you haven&amp;rsquo;t tried it yet, take a look⁠ – it could help you integrate threat modelling into your application development: https://copi.securedelivery.io/</description>
+    </item>
+    
+    <item>
+      <title>We&#39;re Hiring! Come &amp; Help Us Make Everything More Secure</title>
+      <link>https://securedelivery.io/news/we-are-hiring/</link>
+      <pubDate>Tue, 31 May 2022 14:18:42 +0000</pubDate>
+      
+      <guid>https://securedelivery.io/news/we-are-hiring/</guid>
+      <description>We&amp;rsquo;re looking to fill a number of roles. If you’ve got good experience in security engineering, digital forensics &amp;amp; incident response, or leading secure product development functions and share our passion for securing software everywhere, please reach out for more information and an initial informal chat. You’ll be working alongside some of the best in the industry and helping teams at high-profile organisations to build their security capabilities to world-class levels.</description>
+    </item>
+    
+    <item>
+      <title>Secure Delivery Announces New Partnership with Snyk</title>
+      <link>https://securedelivery.io/news/secure-delivery-announces-new-partnership-with-snyk/</link>
+      <pubDate>Tue, 07 Dec 2021 11:22:43 +0000</pubDate>
+      
+      <guid>https://securedelivery.io/news/secure-delivery-announces-new-partnership-with-snyk/</guid>
+      <description>London — December 7, 2021. Secure Delivery today announced its channel partnership with Snyk, the leader in developer security. The new partnership will combine Snyk’s leading developer security tooling with Secure Delivery’s proven security coaching, consulting and managed services to accelerate the vigour of security capabilities in digital delivery organisations worldwide.
+People, process and technology are at the heart of any scalable security transformation and focussing on all three will elevate an organisation to world-class security capabilities.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Secure Delivery</title>
+    <link>https://securedelivery.io/practitioners/vee-schmitt/</link>
+    <description>Recent content on Secure Delivery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Jan 2022 21:53:43 +0000</lastBuildDate><atom:link href="https://securedelivery.io/practitioners/vee-schmitt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cybersecurity in Medical Devices Guidance</title>
+      <link>https://securedelivery.io/articles/fda-cyber-security-in-medical-devices/</link>
+      <pubDate>Fri, 01 Jul 2022 07:42:11 +0000</pubDate>
+      
+      <guid>https://securedelivery.io/articles/fda-cyber-security-in-medical-devices/</guid>
+      <description>THIS IS MY PERSONAL OPINION AND NOT THE OPINION OF ANY ORGANISATION I AM EMPLOYED BY In April of this year, the new, much anticipated, United States Food and Drug Administration (US FDA) draft &amp;lsquo;Cyber Security in Medical Devices&amp;rsquo; guidance was put forth to the public and industry to comment on. This article aims to look at the bill in terms of the good, the bad and the ugly.
+With that out of the way, the first thing that comes to mind when thinking about this guidance is the line that states that this guidance contains &amp;rsquo;nonbinding&amp;rsquo; recommendations, which is exactly what a guidance is: it is a recommendation of what you should do.</description>
+    </item>
+    
+  </channel>
+</rss>

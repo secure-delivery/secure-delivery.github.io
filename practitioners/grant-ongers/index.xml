@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Secure Delivery</title>
+    <link>https://securedelivery.io/practitioners/grant-ongers/</link>
+    <description>Recent content on Secure Delivery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Jan 2022 21:53:43 +0000</lastBuildDate><atom:link href="https://securedelivery.io/practitioners/grant-ongers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OWASP API Top 10 CTF Walk-through</title>
+      <link>https://securedelivery.io/articles/api-top-ten-walkthrough/</link>
+      <pubDate>Thu, 10 Mar 2022 14:00:00 +0100</pubDate>
+      
+      <guid>https://securedelivery.io/articles/api-top-ten-walkthrough/</guid>
+      <description>I&amp;rsquo;ve been promising this walk-through for a while now (ever since first updating this material to use the awesome vAPI CTF 1.1) and now I&amp;rsquo;ve finally gotten around to it.
+Getting started To get started with you&amp;rsquo;ll need to have access to the following tools: Docker - please ensure that you can use docker-compose; git - please make sure you can git clone public repositories; Postman; and of course ZAP. Then there are the bonus tools, and I say bonus because I was unable to make either work on both my new Mac (new Mac silicone FTW), or my Ubuntu machine (I don&amp;rsquo;t use Wayland on my XPS).</description>
+    </item>
+    
+  </channel>
+</rss>
