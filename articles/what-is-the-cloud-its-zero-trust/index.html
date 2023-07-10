@@ -43,7 +43,6 @@
     <div class="hidden lg:flex lg:gap-x-12">
         <a href="/assessments" class="text-sm font-semibold leading-6 text-gray-900">Assessments</a>
         <a href="/articles" class="text-sm font-semibold leading-6 text-gray-900">Insights</a>
-        <a href="/news" class="text-sm font-semibold leading-6 text-gray-900">News</a>
         <a href="#contact-us" class="text-sm font-semibold leading-6 text-gray-900">Contact Us</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -75,7 +74,6 @@
                 <a href="/" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
                 <a href="/assessments" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Assessments</a>
                 <a href="/articles" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Insights</a>
-                <a href="/news" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">News</a>
                 <a href="#contact-us" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact Us</a>
                 </div>
                 <div class="py-6">
@@ -116,6 +114,10 @@
         <div class="mt-16 flow-root sm:mt-24">
           <div class="-m-2 lg:-m-4 lg:rounded-2xl lg:p-4">
 			
+				
+						<img src="/articles/what-is-the-cloud-its-zero-trust/clouds-and-bird_hu47af8529cebd22d3bd67a781d111323c_2154928_1920x981_resize_q75_h2_box_3.webp" width="1920" height="981" class="rounded-md shadow-2xl ring-1 ring-gray-900/10">
+					
+				
           </div>
         </div>
 
@@ -162,8 +164,8 @@ of the communications channel over which the end-systems communicate.</p>
 <ol>
 <li>Hi!</li>
 <li>Hello. Give me your client certificate.</li>
-<li>Er&hellip;
-[FATAL handshake_failure, socket closed]</li>
+<li>Er&hellip;</li>
+<li>[FATAL handshake_failure, socket closed]</li>
 </ol>
 <p>That&rsquo;s a <em>very</em> small attack surface. The whole process got nowhere near your application code. It&rsquo;s possible there&rsquo;s a remotely exploitable vulnerability in the TLS implementation but these things get a lot of thought and review. Your entire public cloud deployment is accessible via AWS&rsquo;s, Azure&rsquo;s or GCP&rsquo;s management API and <em>they&rsquo;re</em> hanging out on the internet using only API keys for identity.</p>
 <p>On a trusted network your point of failure is the network. If that’s compromised then all bets are off. And in a cloud deployment who can make network changes? Pretty much anyone! In a zero trust network your point of failure is your certificate signing authority. And who can make changes to that? With a little effort around security controls, pretty much no one. Now, you <em>could</em> expend great effort in preventing anyone from making network changes to your secure cloud network topology, removing capabilities from delivery teams until they can’t get anything done themselves and have to raise tickets to get reserved CIDR blocks and update VPC peering just for their service to simply talk to a service built by another team, slowing down delivery to an absolute crawl. You <em>could</em> just shrug your shoulders when a team that&rsquo;s built their services on Azure asks how they connect to a service another team has built on AWS. Or you can party <a href="https://adam.shostack.org/ssl.html">like it&rsquo;s 1995 when even SSL v2 had client certificates</a> and secure your network communications properly. Oh look, <a href="https://www.linkedin.com/in/shostack/">Adam</a> references IPv6 in his 1995 overview of SSL! We were so hopeful back then&hellip;</p>
