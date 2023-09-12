@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Security, Organisations on Secure Delivery</title>
-    <link>https://securedelivery.io/tags/security-organisations/</link>
-    <description>Recent content in Security, Organisations on Secure Delivery</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 15 Mar 2021 13:29:08 +0100</lastBuildDate><atom:link href="https://securedelivery.io/tags/security-organisations/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Scaling Product Security Across the Org</title>
-      <link>https://securedelivery.io/articles/how-to-scale-product-security/</link>
-      <pubDate>Mon, 15 Mar 2021 13:29:08 +0100</pubDate>
-      
-      <guid>https://securedelivery.io/articles/how-to-scale-product-security/</guid>
-      <description>The Ratio In our work with large organisations we&amp;rsquo;ve developed a &amp;ldquo;rule of thumb&amp;rdquo; that quite usefully predicts the proportion of development and cybersecurity staff in the workforce. For companies whose primary business isn&amp;rsquo;t software development but have internal, established application delivery capability (banks, telcos, etc.) around 10% of the workforce are software developers.
-At the scale these organisations operate at, typically an architecture function has split off from engineering and is around 10% of the developer total.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Security, Organisations on Secure Delivery</title><link>https://securedelivery.io/tags/security-organisations/</link><description>Recent content in Security, Organisations on Secure Delivery</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 15 Mar 2021 13:29:08 +0100</lastBuildDate><atom:link href="https://securedelivery.io/tags/security-organisations/index.xml" rel="self" type="application/rss+xml"/><item><title>Scaling Product Security Across the Org</title><link>https://securedelivery.io/articles/how-to-scale-product-security/</link><pubDate>Mon, 15 Mar 2021 13:29:08 +0100</pubDate><guid>https://securedelivery.io/articles/how-to-scale-product-security/</guid><description>The Ratio In our work with large organisations we&amp;rsquo;ve developed a &amp;ldquo;rule of thumb&amp;rdquo; that quite usefully predicts the proportion of development and cybersecurity staff in the workforce. For companies whose primary business isn&amp;rsquo;t software development but have internal, established application delivery capability (banks, telcos, etc.) around 10% of the workforce are software developers.
+At the scale these organisations operate at, typically an architecture function has split off from engineering and is around 10% of the developer total.</description></item></channel></rss>
