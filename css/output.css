@@ -2595,6 +2595,14 @@ video {
     margin-bottom: 14rem;
   }
 
+  .sm\:mt-56 {
+    margin-top: 14rem;
+  }
+
+  .sm\:mt-52 {
+    margin-top: 13rem;
+  }
+
   .sm\:block {
     display: block;
   }
